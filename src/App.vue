@@ -15,7 +15,7 @@
       <div class="button-container">
         <button @click="onClickChangeStatusModal" class="button bg-white text-beer2-500 jab-rounded"> Pré-inscription </button>
         <a href="https://www.buymeacoffee.com/justabeer"
-          add target="_blank" class="button bg-white text-beer2-500 jab-rounded"> Offrez-nous une bière 🍻</a>
+          target="_blank" class="button bg-white text-beer2-500 jab-rounded" rel="noopener"> Offrez-nous une bière 🍻</a>
       </div>
     </div>
     <div class="container-right">
