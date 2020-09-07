@@ -1,0 +1,21 @@
+@tailwind base;
+
+.jab-min-width {
+  min-width: 320px;
+}
+
+.text-10xl {
+  font-size: 10rem;
+}
+
+.jab-rounded {
+  border-radius: 100px;
+}
+
+@tailwind components;
+
+
+@tailwind utilities;
+
+
+
