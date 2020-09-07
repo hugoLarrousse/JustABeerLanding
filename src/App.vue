@@ -54,10 +54,23 @@ export default {
 </script>
 
 <style>
-@font-face {
+/* @font-face {
   font-family: "Inter";
   src: local("Inter"),
    url(./fonts/Inter-VariableFont_slnt,wght.ttf) format("truetype");
+} */
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+   url(./fonts/Inter-Regular-slnt=0.ttf) format("truetype");
+}
+
+@font-face {
+  font-family: "Inter";
+  src: local("Inter"),
+   url(./fonts/Inter-SemiBold-slnt=0.ttf) format("truetype");
+  font-weight: semi-bold;
 }
 
 @font-face {
