@@ -16,9 +16,7 @@
 </template>
 
 <script>
-const re = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/; //eslint-disable-line
-
-const validEmail = (email) => re.test(email);
+import { validEmail, sendToIfttt } from '../utils';
 
 export default {
   name: 'Modal',
@@ -44,6 +42,7 @@ export default {
         this.errorMessage = 'Adresse Email invalide';
         return;
       }
+      sendToIfttt('data_landing_sent', this.firstname, this.email);
       // send
       this.validated = true;
       setTimeout(() => {
