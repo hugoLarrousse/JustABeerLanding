@@ -114,6 +114,8 @@ html, body {
 .button {
   transition: transform 0.2s ease-in-out;
   cursor: pointer;
+  margin-top: 30px;
+  text-align: center;
 }
 
 .button:hover {
@@ -129,6 +131,7 @@ html, body {
   align-items: center;
   justify-content: space-between;
   width: 80%;
+  flex-wrap: wrap;
 }
 
 .example {
@@ -181,7 +184,8 @@ html, body {
 }
 
 .button {
-  padding: 0.5rem 3.25rem;
+  padding: 0.5rem 0;
+  width: 13rem;
   font-size: 12px;
 }
 
@@ -211,8 +215,8 @@ html, body {
   }
 
   .button {
-    padding: 0.5rem 3.25rem;
-    margin: 1rem;
+    padding: 0.5rem 0;
+    width: 13rem;
     font-size: 12px;
   }
 }
@@ -287,11 +291,14 @@ html, body {
 .button-container {
   max-width: 500px;
   margin: 3.5rem 0 3.5rem;
+  width: 92%;
+
 }
 
 .button {
-  padding: 0.45rem 2.75rem;
-  font-size: 9px;
+  padding: 0.5rem 0;
+  width: 12rem;
+  font-size: 10px;
 }
 
 .example {
@@ -326,12 +333,13 @@ html, body {
 }
 
 .button-container {
-  max-width: 500px;
+  max-width: 450px;
   margin-top: 5rem;
 }
 
 .button {
-  padding: 0.5rem 3.5rem;
+  padding: 0.5rem 0;
+  width: 13rem;
   font-size: 10px;
 }
 
@@ -367,12 +375,13 @@ html, body {
 }
 
 .button-container {
-  max-width: 600px;
+  max-width: 525px;
   margin-top: 5rem;
 }
 
 .button {
-  padding: 0.5rem 4rem;
+  padding: 0.5rem 0;
+  width: 15rem;
   font-size: 0.75rem;
 }
 
@@ -407,19 +416,61 @@ html, body {
   font-size: 18px;
 }
 
-.button {
-  padding: 0.5rem 5rem;
-  white-space: nowrap;
-}
-
 .button-container {
   max-width: 700px;
   margin-top: 5rem;
 }
 
+.button {
+  padding: 0.70rem 0;
+  width: 17rem;
+  font-size: 1rem;
+}
+
 .example {
   right: -55px;
   height: 600px;
+}
+}
+
+@media only screen and (min-width: 1550px) {
+  .main-container {
+    margin-top: 10px;
+  }
+
+  .title {
+    font-size: 13rem;
+    margin-right: 1.75rem;
+  }
+
+  .myLogo {
+    margin-top: 10px;
+    height: 180px;
+  }
+
+  .punchline {
+    font-size: 5rem;
+  }
+
+  .description {
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+.button-container {
+  max-width: 875px;
+  margin-top: 5rem;
+}
+
+.button {
+  padding: 0.70rem 0;
+  width: 20rem;
+  font-size: 1rem;
+}
+
+.example {
+  right: -55px;
+  height: 700px;
 }
 }
 </style>
