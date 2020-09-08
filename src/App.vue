@@ -19,7 +19,11 @@
       </div>
     </div>
     <div class="container-right">
-      <img class="example" src="@/assets/example.png" alt="Just A Beer exemple">
+      <picture>
+        <source class="example" srcset="@/assets/example2.svg" type="image/svg+xml" media="(max-width: 639px)">
+        <source class="example" srcset="@/assets/example.webp" type="image/webp">
+        <img class="example example1" src="@/assets/example.png" alt="Just A Beer exemple ">
+      </picture>
     </div>
     </div>
     </div>
