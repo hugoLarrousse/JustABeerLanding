@@ -1,14 +1,14 @@
 <template>
  <div class="modal-screen-container" v-on:click="closeModal()">
    <div v-on:click.stop class="modal-container" v-bind:class="validated && 'spin'">
-     <img v-on:click.stop src="@/assets/logoModal.png" alt="Just A Beer logo modal">
+     <img v-on:click.stop src="@/assets/logoModal.png" alt="Just A Beer logo bière amitié">
      <input v-show="!validated" v-model="firstname" class="input input1" type="text" placeholder="Prénom" autocomplete="firstname"/>
      <input v-show="!validated" v-model="email" class="input input2" type="email" placeholder="Email" autocomplete="email" inputmode="email"/>
      <button v-show="!validated" @click="sendForm()" class="button-modal bg-white"> Pré-inscription </button>
      <div v-show="!validated" class="error-message"> {{errorMessage}} </div>
      <div class="validated" v-show="validated">
        <div> Pré-inscription validée </div>
-       <img class="tick" src="@/assets/tick.svg" alt="Just A Beer tick"/>
+       <img class="tick" src="@/assets/tick.svg" alt="Just A Beer validation"/>
 
      </div>
    </div>

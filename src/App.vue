@@ -14,7 +14,7 @@
       <h3 class="description font-semibold">Rejoignez une table et faites des rencontres amicales sans pression</h3>
       <div class="button-container">
         <button @click="onClickChangeStatusModal" class="button bg-white text-beer2-500 jab-rounded"> Pré-inscription </button>
-        <a href="https://www.buymeacoffee.com/justabeer"
+        <a @click="onClickDonate" href="https://www.buymeacoffee.com/justabeer"
           target="_blank" class="button bg-white text-beer2-500 jab-rounded" rel="noopener"> Offrez-nous une bière 🍻</a>
       </div>
     </div>
@@ -22,7 +22,7 @@
       <picture>
         <source class="example" srcset="@/assets/example2.svg" type="image/svg+xml" media="(max-width: 639px)">
         <source class="example" srcset="@/assets/example.webp" type="image/webp">
-        <img class="example example1" src="@/assets/example.png" alt="Just A Beer exemple ">
+        <img class="example example1" src="@/assets/example.png" alt="Just A Beer discussion entre amis">
       </picture>
     </div>
     </div>
@@ -33,6 +33,7 @@
 import Header from './components/Header.vue';
 import Bubbles from './components/Bubbles.vue';
 import Modal from './components/Modal.vue';
+import { sendToIfttt } from './utils';
 
 export default {
   name: 'App',
@@ -52,6 +53,9 @@ export default {
     },
     onClickCloseModal() {
       this.openModal = false;
+    },
+    onClickDonate() {
+      sendToIfttt('click_donate');
     },
   },
 };
@@ -113,6 +117,10 @@ html, body {
 .title {
   font-family: 'BebasNeue';
   line-height: 1;
+}
+
+.container-right, .container-left {
+  z-index: 1;
 }
 
 .button {

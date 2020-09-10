@@ -5,8 +5,12 @@ const sendToIfttt = async (eventName, value1, value2) => {
   myHeaders.append('Content-Type', 'application/json');
 
   const urlencoded = new URLSearchParams();
-  urlencoded.append('value1', value1);
-  urlencoded.append('value2', value2);
+  if (value1) {
+    urlencoded.append('value1', value1);
+  }
+  if (value2) {
+    urlencoded.append('value2', value2);
+  }
 
   const requestOptions = {
     method: 'POST',
