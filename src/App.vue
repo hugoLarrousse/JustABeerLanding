@@ -10,7 +10,7 @@
         <h1 class="title uppercase">Just a beer</h1>
         <img class="myLogo" src="@/assets/myLogo.png" alt="Just A Beer logo">
       </div>
-      <h2 class="punchline flex font-semibold">Let's be<p class="text-beer2-200">er</p>, friends !</h2>
+      <h2 class="punchline flex font-semibold">Let's be<p class="text-beer2-200">er</p>, friends !!</h2>
       <h3 class="description font-semibold">Rejoignez une table et faites des rencontres amicales sans pression</h3>
       <div class="button-container">
         <button @click="onClickChangeStatusModal" class="button bg-white text-beer2-500 jab-rounded"> Pré-inscription </button>
